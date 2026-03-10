@@ -41,14 +41,29 @@
 // number[5] = "salom";
 // console.log(number);
 // console.log(number.length);
-let number = [1, 2, 3, 4, 5, 6];
-// let result = number.splice(0, 4);
-// console.log(result);
-console.log(number.concat([11, 22, 33]));
-console.log(number.join(''));
-let array = [1, [2, [3]]];
-console.log(array.flat(2));
-console.log(number.indexOf(3));
-console.log(number.includes(6));
+// let number = [1, 2, 3, 4, 5, 6];
+// // let result = number.splice(0, 4);
+// // console.log(result);
+// console.log(number.concat([11, 22, 33]));
+// console.log(number.join(''));
+// let array = [1, [2, [3]]];
+// console.log(array.flat(2));
+// console.log(number.indexOf(3));
+// console.log(number.includes(6));
 
-console.log(number.find(x => x > 3));
+// console.log(number.find((x) => { return x > 3 }));
+// console.log(number.findIndex((x) => { return x > 4 }));
+// console.log(number.some((x) => { return x < 0 }));
+// console.log(number.every((x) => { return x > 0 }));
+
+let products = [
+    { name: "Phone", price: 1000 },
+    { name: "Laptop", price: 2000 },
+    { name: "Tablet", price: 1500 }
+];
+
+function filtredProducts(minPrice, maxPrice) {
+    return products.filter((product) => {
+        return product.price >= minPrice && product.price <= maxPrice;
+    })};
+console.log(filtredProducts(1200, 1800));
