@@ -4,9 +4,6 @@
 //     age: 30,
 // }
 
-const { version } = require("react");
-
-
 // // Object literal
 // let car = {
 //     brand: "Toyota",
